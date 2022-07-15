@@ -1,0 +1,30 @@
+[
+  {
+    "name": "LOCAL",
+    "driverClassName": "com.mysql.jdbc.Driver",
+    "url": "jdbc:mysql://localhost:3306/sms?useUnicode=true&characterEncoding=UTF-8&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false",
+    "username": "root",
+    "password": 8574
+  },
+  {
+    "name": "test",
+    "driverClassName": "com.mysql.jdbc.Driver",
+    "url": "jdbc:mysql://localhost:3306/test_sms?useUnicode=true&characterEncoding=UTF-8&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false",
+    "username": "root",
+    "password": 8574
+  },
+  {
+    "name": "test1",
+    "driverClassName": "com.mysql.jdbc.Driver",
+    "url": "jdbc:mysql://localhost:3306/test_sms1?useUnicode=true&characterEncoding=UTF-8&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false",
+    "username": "root",
+    "password": 8574
+  },
+  {
+    "name": "test2",
+    "driverClassName": "com.mysql.jdbc.Driver",
+    "url": "jdbc:mysql://localhost:3306/test_sms2?useUnicode=true&characterEncoding=UTF-8&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false",
+    "username": "root",
+    "password": 8574
+  }
+]

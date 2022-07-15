@@ -1,0 +1,42 @@
+keycloak:
+  realm: smsdev
+  auth-server-url: http://localhost:8180/auth
+  resource: sms-web
+  credentials:
+    secret: FdFnFERxEqzip5MApGpUCUrwTKPgAzPj
+  public-client: false
+  ssl-required: external
+  principal-attribute: preferred_username
+
+logging:
+  level:
+    root: INFO
+    org.springframework:
+      security: INFO
+      web: INFO
+      boot: INFO
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG
+    org.springframework.web.servlet.DispatcherServlet: DEBUG
+
+spring:
+  application:
+    name: sms-common
+  jpa:
+    show-sql: true
+    format-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: true
+    properties:
+      hibernate:
+        search.default.directory_provider: filesystem
+        search.default.indexBase: opt/indexes/
+        type: trace
+        dialect.storage_engine: innodb
+
+master-database:
+  username: user
+  password: 8574
+  url: jdbc:mysql://localhost:3306/master_sms?useUnicode=true&characterEncoding=UTF-8&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+  driverClassName: com.mysql.jdbc.Driver

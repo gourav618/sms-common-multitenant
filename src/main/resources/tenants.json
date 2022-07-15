@@ -1,0 +1,9 @@
+[
+  {
+    "name": "smsdev",
+    "driverClassName": "com.mysql.jdbc.Driver",
+    "url": "jdbc:mysql://localhost:3306/smsdev?useUnicode=true&characterEncoding=UTF-8&createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false",
+    "username": "root",
+    "password": 8574
+  }
+]
